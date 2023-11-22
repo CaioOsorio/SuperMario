@@ -8,11 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-<<<<<<< HEAD
-set VIRTUAL_ENV=C:\Users\caio-\OneDrive\Área de Trabalho\API\SuperMario\venv
-=======
 set VIRTUAL_ENV=C:\Users\Manhã\Documents\GitHub\SuperMario\venv
->>>>>>> 5da037bfd8d0f0c309d3bb87784e4833a7397d95
 
 if not defined PROMPT set PROMPT=$P$G
 

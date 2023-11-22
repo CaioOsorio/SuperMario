@@ -10,3 +10,7 @@ def home():
 def luigi():
     return render_template('luigi.html')
 
+@app.route('/bowser')
+def bowser():
+    return render_template('bowser.html')
+

@@ -42,17 +42,10 @@ deactivate nondestructive
 if [ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ] ; then
     # transform D:\path\to\venv to /d/path/to/venv on MSYS
     # and to /cygdrive/d/path/to/venv on Cygwin
-<<<<<<< HEAD
-    export VIRTUAL_ENV=$(cygpath "C:\Users\caio-\OneDrive\Área de Trabalho\API\SuperMario\venv")
-else
-    # use the path as-is
-    export VIRTUAL_ENV="C:\Users\caio-\OneDrive\Área de Trabalho\API\SuperMario\venv"
-=======
     export VIRTUAL_ENV=$(cygpath "C:\Users\Manhã\Documents\GitHub\SuperMario\venv")
 else
     # use the path as-is
     export VIRTUAL_ENV="C:\Users\Manhã\Documents\GitHub\SuperMario\venv"
->>>>>>> 5da037bfd8d0f0c309d3bb87784e4833a7397d95
 fi
 
 _OLD_VIRTUAL_PATH="$PATH"
