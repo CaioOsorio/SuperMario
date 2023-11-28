@@ -1,6 +1,11 @@
 from flask import Flask, render_template
+from flask_sqlalchemy import SQLALchemy
+from datetime import datetime
 
 app = Flask("__name__")
+
+#adicionar database
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user.db'
 
 @app.route('/')
 def home():
