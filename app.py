@@ -4,19 +4,6 @@ from datetime import datetime
 
 app = Flask("__name__")
 
-#adicionar database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user.db'
-#inicializando database
-db = SQLAlchemy(app)
-#criando modelo
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(200), nullable=False)
-    email = cb.Column(db.String(200), nullable=False, unique=True)
-    date_added = db.Column(db.DateTime, default=datetime.utcnow)
-
-    #criar uma string
-    def_repr_(self):
         
 
 @app.route('/')
